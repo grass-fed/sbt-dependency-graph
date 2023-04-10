@@ -55,8 +55,6 @@ object AsciiTreeLayout {
   }
 
   def defaultColumnSize: Int = {
-    val termWidth = SbtAccess.getTerminalWidth
-    if (termWidth > 20) termWidth - 8
-    else 80 // ignore termWidth
+    1024
   }
 }
